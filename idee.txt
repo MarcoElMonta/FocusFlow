@@ -1,0 +1,7 @@
+pagine da creare
+-login
+-schermata principale
+-popup timer/task
+
+
+todo: firebase integration
