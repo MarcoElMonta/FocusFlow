@@ -1,11 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-    <string name="app_name">FocusFlow</string>
-    <string name="sign_in">Sign In</string>
-    <string name="click_here_to_register">Click here to register</string>
-    <string name="user_login">User Login</string>
-    <string name="enter_email">Enter Email</string>
-    <string name="enter_password">Enter Password</string>
+    <string name="app_name">Focus Flow</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="log_in">Please, Log In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="password_forgotten">Did you forget your password?</string>
+    <string name="or">or</string>
+    <string name="account_creation">Create An Account</string>
     <string name="sign_up">Sign Up</string>
-    <string name="enter_first_name">Enter first name</string>
-    <string name="enter_last_name">Enter last name</string>
+    <string name="name">Name</string>
 </resources>

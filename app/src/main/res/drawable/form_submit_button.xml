@@ -5,6 +5,6 @@
         android:radius="175dp" />
     <stroke
         android:width="5dp"
-        android:color="@color/black" />
+        android:color="@color/md_theme_scrim" />
 
 </shape>
