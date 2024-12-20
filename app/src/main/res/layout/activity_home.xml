@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_background"
+        />
+
+    <LinearLayout
+        android:id="@+id/central_section"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/quote_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_verylarge">
+            </View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_verylarge">
+            </View>
+
+
+            <TextView
+                android:id="@+id/quote_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:textSize="@dimen/size_verylarge"
+                android:textColor="@color/md_theme_inversePrimary_mediumContrast"
+                android:textStyle="bold"
+                android:text="@string/hi_user"/>
+
+
+            <TextView
+                android:id="@+id/quote_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:textStyle="italic"
+                android:textSize="@dimen/size_medium"
+                android:textColor="@color/md_theme_inversePrimary_mediumContrast"
+                android:text="@string/let_s_make_today_productive"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/md_theme_inversePrimary_mediumContrast" />
+
+
+        <!-- Seconda sezione: Task di oggi -->
+        <LinearLayout
+            android:id="@+id/today_tasks_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tasks_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Today task"
+                android:textSize="@dimen/size_medium"
+                android:textColor="@color/md_theme_inversePrimary_mediumContrast"
+                android:textStyle="bold" />
+
+
+            <ListView
+                android:id="@+id/today_tasks_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="1dp"
+                android:padding="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

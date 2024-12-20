@@ -12,4 +12,6 @@
     <string name="account_creation">Create An Account</string>
     <string name="sign_up">Sign Up</string>
     <string name="name">Name</string>
+    <string name="hi_user">Hi, User</string>
+    <string name="let_s_make_today_productive">Let\'s make today productive!</string>
 </resources>
