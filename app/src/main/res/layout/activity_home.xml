@@ -7,14 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_transparent"
+        android:elevation="4dp"
+        app:title="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/top_app_bar"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:alpha="0.9"
         android:scaleType="centerCrop"
-        android:src="@drawable/login_background"
-        />
+        android:src="@drawable/login_background" />
 
     <LinearLayout
         android:id="@+id/central_section"
@@ -22,8 +35,7 @@
         android:layout_height="0dp"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
 
         <LinearLayout
@@ -34,27 +46,15 @@
             android:orientation="vertical">
 
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/size_verylarge">
-            </View>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/size_verylarge">
-            </View>
-
-
             <TextView
                 android:id="@+id/quote_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:gravity="start"
-                android:textSize="@dimen/size_verylarge"
+                android:text="@string/hi_user"
                 android:textColor="@color/md_theme_inversePrimary_mediumContrast"
-                android:textStyle="bold"
-                android:text="@string/hi_user"/>
+                android:textSize="@dimen/size_verylarge"
+                android:textStyle="bold" />
 
 
             <TextView
@@ -63,10 +63,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:gravity="start"
-                android:textStyle="italic"
-                android:textSize="@dimen/size_medium"
+                android:text="@string/let_s_make_today_productive"
                 android:textColor="@color/md_theme_inversePrimary_mediumContrast"
-                android:text="@string/let_s_make_today_productive"/>
+                android:textSize="@dimen/size_medium"
+                android:textStyle="italic" />
         </LinearLayout>
 
         <View
@@ -80,7 +80,7 @@
         <LinearLayout
             android:id="@+id/today_tasks_section"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="400dp"
             android:orientation="vertical">
 
 
@@ -89,9 +89,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Today task"
-                android:textSize="@dimen/size_medium"
+                android:text="@string/today_task"
                 android:textColor="@color/md_theme_inversePrimary_mediumContrast"
+                android:textSize="@dimen/size_medium"
                 android:textStyle="bold" />
 
 
@@ -104,7 +104,20 @@
         </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImage"
+        app:layout_constraintStart_toStartOf="parent">
 
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_navigation_menu"
+            android:background="@color/white_transparent"/>
+
+    </LinearLayout>
 
 
 
