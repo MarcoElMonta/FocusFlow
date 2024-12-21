@@ -60,8 +60,9 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/baseline_alternate_email_pink"
                 android:hint="@string/email"
+                android:inputType="textEmailAddress"
                 android:background="@drawable/rounded_edit_text"
-                android:drawablePadding="10dp"
+                android:drawablePadding="@dimen/margin_small"
                 android:padding="16dp"
                 android:layout_marginBottom="16dp"
                 android:textSize="@dimen/margin_medium"
@@ -79,10 +80,12 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/baseline_key"
                 android:hint="@string/password"
+                android:inputType="textPassword"
                 android:background="@drawable/rounded_edit_text"
-                android:drawablePadding="10dp"
+                android:drawablePadding="@dimen/margin_small"
                 android:padding="16dp"
                 android:textSize="@dimen/margin_medium"
+
 
                 />
         </com.google.android.material.textfield.TextInputLayout>

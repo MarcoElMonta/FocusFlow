@@ -79,6 +79,7 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/baseline_alternate_email_pink"
                 android:hint="@string/email"
+                android:inputType="textEmailAddress"
                 android:background="@drawable/rounded_edit_text"
                 android:drawablePadding="@dimen/margin_small"
                 android:padding="16dp"
