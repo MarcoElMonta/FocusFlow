@@ -16,4 +16,9 @@
     <string name="let_s_make_today_productive">Let\'s make today productive!</string>
     <string name="hi_there">Hi there!</string>
     <string name="username">Username</string>
+    <string name="today_task">Today task</string>
+    <string name="account">Account</string>
+    <string name="task">Task</string>
+    <string name="timer">Timer</string>
+    <string name="home">Home</string>
 </resources>

@@ -9,13 +9,13 @@
         android:id="@+id/page_2"
         android:enabled="true"
         android:icon="@drawable/task_square_svgrepo_com__1_"
-        android:title="Task"/>
+        android:title="@string/task"/>
 
     <item
         android:id="@+id/page_3"
         android:enabled="true"
         android:icon="@drawable/timer_svgrepo_com"
-        android:title="Timer"/>
+        android:title="@string/timer"/>
 
 </menu>
 

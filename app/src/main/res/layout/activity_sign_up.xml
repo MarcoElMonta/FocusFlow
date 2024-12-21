@@ -58,7 +58,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/baseline_person_24"
+                android:drawableStart="@drawable/baseline_alternate_email_24"
                 android:hint="@string/username"
                 android:background="@drawable/rounded_edit_text"
                 android:drawablePadding="@dimen/margin_small"
