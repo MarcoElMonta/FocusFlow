@@ -21,4 +21,18 @@
     <string name="task">Task</string>
     <string name="timer">Timer</string>
     <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="week_overview">Week Overview</string>
+    <string name="letter_monday">M</string>
+    <string name="letter_tuesday">T</string>
+    <string name="letter_wednesday">W</string>
+    <string name="letter_thursday">T</string>
+    <string name="letter_friday">F</string>
+    <string name="letter_saturday">S</string>
+    <string name="letter_sunday">S</string>
+    <string name="my_tasks">My task</string>
+    <string name="timer_type">Timer tipe</string>
+    <string name="task_name">Task name</string>
+    <string name="create_task">Create task</string>
 </resources>
